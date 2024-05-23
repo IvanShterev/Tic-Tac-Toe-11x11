@@ -1,0 +1,149 @@
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+.player-form{
+    margin: 200px auto;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(238, 234, 234, 0.5);
+}
+
+.player-form button{
+    padding: 5px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.container{
+    margin: 30px auto;
+    width: 572px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-container p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.bottom-container button{
+    align-self: center;
+    padding: 10px;
+    width: 90px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(233, 184, 94);
+    border: none;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+    height: 572px;
+    width: 572px;
+}
+
+.cell{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.vertical-up::after{
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: red;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.vertical-down::after{
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: red;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.horizontal-left::after{
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: red;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+.horizontal-right::after{
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: red;
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+.diagonal-left-up::after{
+    content: "";
+    height: 2px;
+    width: 77px;
+    background: red;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.diagonal-left-down::after{
+    content: "";
+    height: 2px;
+    width: 77px;
+    background: red;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.diagonal-right-down::after{
+    content: "";
+    height: 2px;
+    width: 77px;
+    background: red;
+    transform: rotate(135deg);
+    position: absolute;
+}
+
+.diagonal-right-up::after{
+    content: "";
+    height: 2px;
+    width: 77px;
+    background: red;
+    transform: rotate(135deg);
+    position: absolute;
+}
